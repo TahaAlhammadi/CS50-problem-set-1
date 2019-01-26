@@ -6,7 +6,7 @@ int main(void)
     int n;
          do   // Get input and check it is valid
         {
-            n = get_int("write the number of height between 1 and 23");
+            n = get_int("Choose a height between 0 and 23 blocks for your pyramid.\n");
         }
         while(n<1 || n> 23);
     for(int i=1;i<=n;i++)
