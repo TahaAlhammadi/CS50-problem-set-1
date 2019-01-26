@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<cs50.h>
+
+int main(void)
+{
+    int n;
+         do   // Get input and check it is valid
+        {
+            n = get_int("write the number of height between 1 and 23");
+        }
+        while(n<1 || n> 23);
+    for(int i=1;i<=n;i++)
+    {
+        for (int j=i;j>0;j--)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
